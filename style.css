@@ -1,0 +1,398 @@
+.navbar {
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-content {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.img {
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+nav a {
+    font-size: 20px;
+    font-weight: 300;
+    color: #39464d;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #20b689;
+}
+
+.register-btn {
+    background: #15947f;
+    color: white;
+    padding: 11px 22px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    transition: 0.3s;
+    margin-right: 50px;
+}
+
+.register-btn:hover {
+    background: #0f7262;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.hero-image img {
+    min-height: 350px;
+    object-fit: cover;
+}
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+section {
+    padding: 70px 0;
+}
+
+span {
+    color: #01bd7e;
+    font-weight: bold;
+}
+
+.section-head {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.section-head h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.section-head p {
+    color: #c7c7c7;
+}
+
+/* =========================
+   IMPACT
+========================= */
+
+.impact {
+    background: #000000;
+    margin-top: 0px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.stat-box {
+    text-align: center;
+    padding: 30px 15px;
+    border-radius: 12px;
+    background: #838383;
+}
+
+.stat-box h3 {
+    font-size: 50px;
+    color: #01bd7e;
+    margin-bottom: 5px;
+}
+
+.stat-box p {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    background: #f7faf9;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    padding-bottom: 25px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-image {
+    height: 190px;
+    margin: 10px 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #eef3f1;
+}
+
+.service-image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.section-heading h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 10px 0;
+    color: #000000;
+    font-weight: 1000;
+}
+
+.section-heading span {
+    color: #15947f;
+    font-weight: 1000;
+}
+
+.section-heading p {
+    color: #919191;
+    font-size: 20px;
+}
+
+.service-card h3 {
+    font-size: 23px;
+    padding: 5px 25px;
+}
+
+.service-card p {
+    color: #697478;
+    padding: 5px 25px 15px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #101b20;
+    color: white;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+    padding-bottom: 50px;
+}
+
+.footer-about p {
+    color: #adb7ba;
+    margin: 15px 0;
+    max-width: 450px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #adb7ba;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #04ac90;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding: 20px;
+    color: #929da0;
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .upcoming-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .nav-content {
+        flex-wrap: wrap;
+        padding: 15px 0;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .register-btn {
+        margin-left: auto;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        justify-content: center;
+        padding: 70px 0;
+        text-align: center;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-grid,
+    .news-grid,
+    .story-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .upcoming-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .cert-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .cta h2 {
+        font-size: 34px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .register-btn {
+        padding: 9px 14px;
+        font-size: 13px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 65px 0;
+    }
+}
